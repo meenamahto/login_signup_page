@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <input type="button" id="btn" value="Change color">
+    <div class="login">
+        <h1>Login</h1>
+        <form autocomplete="on">
+            Email:<input type="email" id="e">
+            Password:<input type="password" id="p">
+            Confirm Password:<input type="password" id="c">
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </div>
+    <p class="p2">Not have an account <a class="button1" href="form.html"> Sign Up here</a></p>
+    <script>
+        const form=document.querySelector("form")
+        const e=document.getElementById("e")
+        const p=document.getElementById("p")
+        const c=document.getElementById("c")
+        form.addEventListener("submit",function(){
+           if(e.value==="" || p.value==="" || c.value===""){
+                alert("Please Enter valid information.")
+           }
+           else{
+            alert("Your Form has been Submitted.")
+           }
+       })
+       let color=["black","white","gray","darkblue","yellow","pink","skyblue"];
+       let btn=document.getElementById("btn")
+       btn.addEventListener("click",function(){
+            let randomcolor=color[Math.floor(Math.random()*color.length)]
+            document.body.style.background=randomcolor;
+       })
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    background-color: gray;
+}
+.signup{
+    width: 460px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+}
+.login{
+    width: 460px;
+    height: 350px;
+    margin: auto;
+    background-color: white;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 3px;
+    color: white;
+    background-color: blueviolet;
+}
+#btn:hover{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+h4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin-left: 70px;
+}
+form label{
+    display:block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+form input{
+    width: 250px;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+input[type="submit"]{
+    width: 270px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #49c1a2;
+    border: none;
+    color: white;
+    font-size: 18px ;
+}
+.button:hover{
+    background-color:blue;
+}
+.p2 a:link{
+    background-color:pink;
+    font-size: 20px;
+}
+.p2 a:hover{
+    background-color: lightgreen;
+    color: white;
+}
+p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.p2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    color: white;
+}

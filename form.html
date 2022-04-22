@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <input type="button" id="btn" value="Change color">
+    <div class="signup">
+        <h1>Sign Up</h1>
+        <h4>It's free and only take one minute</h4>
+        <form autocomplete="on">
+                First Name<input type="text" id="u"><br>
+                Last Name<input type="text" id="u1">
+                Date <input type="date" id="u2">
+                Email<input type="email" id="u3">
+                Password<input type="password" id="u4">
+                Confirm Password<input type="password" id="u5">
+                <label for="Gender" id="u6"></label>
+                Gender <select name="mygender" id="Gender" >
+                    <option value="f">Female</option>
+                    <option value="m">Male</option>
+                    <option value="o">Other</option>
+                </select>
+                <input class="button" type="submit" value="Submit">
+        </form>
+        <p>By clicking the Sign Up button , you agree to our<br>
+        <a href="#">Terms and Conditions</a> and <a href="#">Policy Privacy</a>
+        </p>
+    </div>
+    <p class="p2">Already have an account <a class="button1" href="login.html"> Login here</a></p>
+   <script>
+       const form=document.querySelector("form")
+       const u=document.getElementById("u")
+       const u1=document.getElementById("u1")
+       const u2=document.getElementById("u2")
+       const u3=document.getElementById("u3")
+       const u4=document.getElementById("u4")
+       const u5=document.getElementById("u5")
+       const u6=document.getElementById("u6")
+       form.addEventListener("submit",function(){
+           if(u.value==="" || u1.value==="" || u2.value==="" ||u3.value==="" || u4.value==="" || u5.value==="" || u6.value===""){
+                alert("Please Enter valid information.")
+           }else{
+            alert("Your Form has been Submitted.")
+           }
+       })
+       let color=["black","white","gray","darkblue","yellow","pink","skyblue"];
+       let btn=document.getElementById("btn")
+       btn.addEventListener("click",function(){
+            let randomcolor=color[Math.floor(Math.random()*color.length)]
+            document.body.style.background=randomcolor;
+       })
+   </script>
+</body>
+</html>
